@@ -13,5 +13,11 @@ CREATE TABLE usuarios(
 )ENGINE=InnoDb;
 
 CREATE TABLE notas(
-    id          int
+    id          int(25) auto_increment not null,
+    usuario_id  int(25) not null,
+    titulo      varchar(255) not null,
+    descripcion MEDIUMTEXT,
+    CONSTRAINT pk_notas PRIMARY KEY(id),
+    CONSTRAINT fk_nota_usuario FOREIGN KEY(usuario_id) REFERENCES usuarios(id)
+
 )ENGINE=InnoDb;
