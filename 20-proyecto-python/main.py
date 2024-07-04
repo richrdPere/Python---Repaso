@@ -13,6 +13,7 @@ print("""
 Acciones disponibles:
     1.- Registro
     2.- Login
+    3.- Salir
       """)
 
 hazEl = acciones.Acciones()
@@ -23,3 +24,6 @@ if accion == 1:
 
 elif accion == 2:
    hazEl.login()
+
+elif accion == 3:
+    exit()
