@@ -1,3 +1,6 @@
+"""
+
+
 import pyodbc
 
 try:
@@ -22,3 +25,4 @@ except Exception as ex:
 finally:
     connection.close()  # Se cerró la conexión a la BD.
     print("La conexión ha finalizado.")
+    """

@@ -1,0 +1,3 @@
+— Crear entorno virtual: virtualenv -p python3 env
+
+— Ejecutar entorno virtual: entrar a env/Scripts/ y a  .\activate
